@@ -1,0 +1,76 @@
+:root {
+  /* colors */
+  --slate-900: #1f314f;
+  --slate-500: #1f314f;
+  --slate-300: #d5e1ef;
+
+  --white: #fff;
+
+  /* typography */
+  --font-family: 'Outfit', sans-serif;
+
+  /* Bold */
+  --preset1: 700;
+  --preset1-fs: 22px;
+  --preset1-lh: 120%;
+  --preset1-ls: 0px;
+
+  /* regular */
+  --preset2: 400;
+  --preset2-fs: 15px;
+  --preset2-lh: 140%;
+  --preset2-ls: 0.2px;
+
+  /* Spacing */
+  --spacing-500: 40px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  height: 100vh;
+  background-color: var(--slate-300);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  width: 320px;
+  text-align: center;
+  background-color: var(--white);
+  padding: var(--spacing-200);
+  border-radius: 15px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+h1 {
+  padding-top: var(--spacing-300);
+  font-weight: var(--preset1);
+  font-size: var(--preset1-fs);
+  line-height: var(--preset1-lh);
+  letter-spacing: var(--preset1-ls);
+}
+
+p {
+  color: var(--slate-500);
+  font-weight: var(--preset2);
+  font-size: var(--preset2-fs);
+  line-height: var(--preset2-lh);
+  letter-spacing: var(--preset2-ls);
+  padding-bottom: var(--spacing-300);
+  padding-top: var(--spacing-200);
+}
