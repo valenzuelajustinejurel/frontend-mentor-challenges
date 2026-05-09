@@ -34,22 +34,22 @@
   --text-preset-1-size: 24px;
   --text-preset-1-line-height: 1.5;
   --text-preset-1-letter-spacing: 0px;
-  --text-preset-1-font-weight: var(var(--font-extra-bold));
+  --text-preset-1-font-weight: var(--font-extra-bold);
 
   --text-preset-2-size: 16px;
   --text-preset-2-line-height: 1.5;
   --text-preset-2-letter-spacing: 0px;
-  --text-preset-2-font-weight: var(var(--font-medium));
+  --text-preset-2-font-weight: var(--font-medium);
 
   --text-preset-3-size: 14px;
   --text-preset-3-line-height: 1.5;
   --text-preset-3-letter-spacing: 0px;
-  --text-preset-3-font-weight: var(var(--font-medium));
+  --text-preset-3-font-weight: var(--font-medium);
 
   --text-preset-3-bold-size: 14px;
   --text-preset-3-bold-line-height: 1.5;
   --text-preset-3-bold-letter-spacing: 0px;
-  --text-preset-3-bold-font-weight: var(var(--font-extra-bold));
+  --text-preset-3-bold-font-weight: var(--font-extra-bold);
 
   /* SPACING */
   --spacing-300: 24px;
@@ -60,28 +60,28 @@
 
 /* UTILITIES */
 .text-preset-1 {
-  font-size: var(--text-preset-1-size);
   line-height: var(--text-preset-1-line-height);
   letter-spacing: var(--text-preset-1-letter-spacing);
   font-weight: var(--text-preset-1-font-weight);
+  font-size: clamp(20px, 2vw, var(--text-preset-1-size));
 }
 .text-preset-2 {
-  font-size: var(--text-preset-2-size);
   line-height: var(--text-preset-2-line-height);
   letter-spacing: var(--text-preset-2-letter-spacing);
   font-weight: var(--text-preset-3-font-weight);
+  font-size: clamp(14px, 2vw, var(--text-preset-2-size));
 }
 .text-preset-3 {
-  font-size: var(--text-preset-3-size);
   line-height: var(--text-preset-3-line-height);
   letter-spacing: var(--text-preset-3-letter-spacing);
   font-weight: var(--text-preset-3-font-weight);
+  font-size: clamp(12px, 2vw, var(--text-preset-3-size));
 }
 .text-preset-3-bold {
-  font-size: var(--text-preset-3-bold-size);
   line-height: var(--text-preset-3-bold-line-height);
   letter-spacing: var(--text-preset-3-bold-letter-spacing);
   font-weight: var(--text-preset-3-bold-font-weight);
+  font-size: clamp(12px, 2vw, var(--text-preset-3-bold-size));
 }
 
 *,
@@ -93,4 +93,63 @@
 }
 body {
   font-family: var(--font-family);
+  background-color: var(--color-background);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card {
+  width: clamp(327px, 80vw, 384px);
+  background-color: var(--color-surface);
+  padding: var(--spacing-300);
+  border-radius: 15px;
+  box-shadow: 5px 5px 0px 2px #000000;
+}
+
+.card__context {
+  padding: var(--spacing-300) 0 var(--spacing-300) 0;
+}
+
+.card__tag {
+  display: inline-block;
+  font-weight: var(--text-preset-3-bold-font-weight);
+  border: 1px solid var(--color-yellow);
+  background-color: var(--color-yellow);
+  padding: var(--spacing-50) var(--spacing-150);
+  border-radius: 5px;
+}
+
+.card__date {
+  padding: var(--spacing-150) 0;
+}
+
+.card__title {
+  padding-bottom: var(--spacing-150);
+}
+
+.card__description {
+  color: var(--color-text-secondary);
+}
+
+.card__author {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-150);
+}
+
+.card__author p {
+  font-size: 14px;
+}
+
+footer {
+  margin: 10px 0 0 0;
 }
