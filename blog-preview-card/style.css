@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Figtree';
+  src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+}
+:root {
+  /* COLORS */
+
+  /* BRAND */
+  --color-yellow: #f4d04e;
+
+  /* NEUTRAL */
+  --color-gray-950: #111111;
+  --color-gray-500: #6b6b6b;
+  --color-white: #fff;
+
+  /* BACKGROUND */
+  --color-background: var(--color-yellow);
+  --color-surface: var(--color-white);
+
+  /* TEXT */
+  --color-text-primary: var(--color-gray-950);
+  --color-text-secondary: var(--color-gray-500);
+
+  /* TYPOGRAPHY */
+
+  /* FONT */
+  --font-family: 'Figtree', sans-serif;
+
+  /* FONT WEIGHTS */
+  --font-medium: 500;
+  --font-extra-bold: 800;
+
+  /* PRESETS */
+  --text-preset-1-size: 24px;
+  --text-preset-1-line-height: 1.5;
+  --text-preset-1-letter-spacing: 0px;
+  --text-preset-1-font-weight: var(var(--font-extra-bold));
+
+  --text-preset-2-size: 16px;
+  --text-preset-2-line-height: 1.5;
+  --text-preset-2-letter-spacing: 0px;
+  --text-preset-2-font-weight: var(var(--font-medium));
+
+  --text-preset-3-size: 14px;
+  --text-preset-3-line-height: 1.5;
+  --text-preset-3-letter-spacing: 0px;
+  --text-preset-3-font-weight: var(var(--font-medium));
+
+  --text-preset-3-bold-size: 14px;
+  --text-preset-3-bold-line-height: 1.5;
+  --text-preset-3-bold-letter-spacing: 0px;
+  --text-preset-3-bold-font-weight: var(var(--font-extra-bold));
+
+  /* SPACING */
+  --spacing-300: 24px;
+  --spacing-150: 12px;
+  --spacing-100: 8px;
+  --spacing-50: 4px;
+}
+
+/* UTILITIES */
+.text-preset-1 {
+  font-size: var(--text-preset-1-size);
+  line-height: var(--text-preset-1-line-height);
+  letter-spacing: var(--text-preset-1-letter-spacing);
+  font-weight: var(--text-preset-1-font-weight);
+}
+.text-preset-2 {
+  font-size: var(--text-preset-2-size);
+  line-height: var(--text-preset-2-line-height);
+  letter-spacing: var(--text-preset-2-letter-spacing);
+  font-weight: var(--text-preset-3-font-weight);
+}
+.text-preset-3 {
+  font-size: var(--text-preset-3-size);
+  line-height: var(--text-preset-3-line-height);
+  letter-spacing: var(--text-preset-3-letter-spacing);
+  font-weight: var(--text-preset-3-font-weight);
+}
+.text-preset-3-bold {
+  font-size: var(--text-preset-3-bold-size);
+  line-height: var(--text-preset-3-bold-line-height);
+  letter-spacing: var(--text-preset-3-bold-letter-spacing);
+  font-weight: var(--text-preset-3-bold-font-weight);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: var(--font-family);
+}
