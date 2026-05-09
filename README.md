@@ -8,9 +8,10 @@ Each challenge lives in its own folder and is deployed via GitHub Pages.
 
 ## Challenges
 
-| #   | Challenge         | Path            | Difficulty | Live                                                                                           | Code                         |
-| --- | ----------------- | --------------- | ---------- | ---------------------------------------------------------------------------------------------- | ---------------------------- |
-| 01  | QR Code Component | Getting Started | Newbie     | [Live](https://valenzuelajustinejurel.github.io/frontend-mentor-challenges/qr-code-component/) | [Code](./qr-code-component/) |
+| #   | Challenge          | Path            | Difficulty | Live                                                                                                  | Code                          |
+| --- | ------------------ | --------------- | ---------- | ----------------------------------------------------------------------------------------------------- | ----------------------------- |
+| 01  | QR Code Component  | Getting Started | Newbie     | [Live](https://valenzuelajustinejurel.github.io/frontend-mentor-challenges/qr-code-component/)        | [Code](./qr-code-component/)  |
+| 02  | Blog Preview Card  | Getting Started | Newbie     | [Live](https://valenzuelajustinejurel.github.io/frontend-mentor-challenges/blog-preview-card/)        | [Code](./blog-preview-card/)  |
 
 _(More challenges added as I complete them)_
 
@@ -22,6 +23,10 @@ _(More challenges added as I complete them)_
 frontend-mentor-challenges/
 ├── README.md
 ├── qr-code-component/
+│   ├── index.html
+│   ├── style.css
+│   └── ...
+├── blog-preview-card/
 │   ├── index.html
 │   ├── style.css
 │   └── ...
