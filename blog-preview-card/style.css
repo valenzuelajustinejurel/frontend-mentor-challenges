@@ -136,6 +136,12 @@ img {
   padding-bottom: var(--spacing-150);
 }
 
+.card__title:hover,
+.card__title:focus {
+  color: var(--color-yellow);
+  cursor: pointer;
+}
+
 .card__description {
   color: var(--color-text-secondary);
 }
