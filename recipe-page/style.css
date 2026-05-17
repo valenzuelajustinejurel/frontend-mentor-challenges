@@ -1,0 +1,224 @@
+@font-face {
+  font-family: 'Outfit';
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf)
+    format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Young Serif';
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-rose-800: #7a284e;
+  --color-rose-50: #fff7fb;
+
+  --color-stone-900: #312e2c;
+  --color-stone-600: #5f564d;
+  --color-stone-150: #e3ddd7;
+  --color-stone-100: #f3e5d7;
+
+  --color-brown-800: #854632;
+
+  --color-white: #fff;
+
+  --primary-font-family: 'Young Serif', sans-serif;
+  --secondary-font-family: 'Outfit', sans-serif;
+
+  --text-preset-1-ff: var(--primary-font-family);
+  --text-preset-1-fs: clamp(2.25rem, 4vw, 2.5rem);
+  --text-preset-1-lh: 1;
+  --text-preset-1-ls: 0px;
+
+  --text-preset-2-ff: var(--primary-font-family);
+  --text-preset-2-fs: 1.75rem;
+  --text-preset-2-lh: 1;
+  --text-preset-2-ls: 0px;
+
+  --text-preset-3-ff: var(--secondary-font-family);
+  --text-preset-3-fs: 1.25rem;
+  --text-preset-3-lh: 1;
+  --text-preset-3-ls: 0px;
+  --text-preset-3-fw: 600;
+
+  --text-preset-4-ff: var(--secondary-font-family);
+  --text-preset-4-fs: 1rem;
+  --text-preset-4-lh: 1.5;
+  --text-preset-4-ls: 0px;
+  --text-preset-4-fw: 400;
+
+  --text-preset-4-bold-ff: var(--secondary-font-family);
+  --text-preset-4-bold-fs: 1rem;
+  --text-preset-4-bold-lh: 1.5;
+  --text-preset-4-bold-ls: 0px;
+  --text-preset-4-bold-fw: 700;
+
+  --spacing-1600: 8rem;
+  --spacing-600: 3rem;
+  --spacing-500: 2.5rem;
+  --spacing-400: 2rem;
+  --spacing-300: 1.5rem;
+  --spacing-200: 1rem;
+  --spacing-150: 0.75rem;
+  --spacing-100: 0.5rem;
+}
+
+/* UTILITIES */
+.text-preset-1 {
+  font-family: var(--text-preset-1-ff);
+  font-size: var(--text-preset-1-fs);
+  line-height: var(--text-preset-1-lh);
+  letter-spacing: var(--text-preset-1-ls);
+}
+.text-preset-2 {
+  font-family: var(--text-preset-2-ff);
+  font-size: var(--text-preset-2-fs);
+  line-height: var(--text-preset-2-lh);
+  letter-spacing: var(--text-preset-2-ls);
+}
+
+.text-preset-3 {
+  font-family: var(--text-preset-3-ff);
+  font-size: var(--text-preset-3-fs);
+  line-height: var(--text-preset-3-lh);
+  letter-spacing: var(--text-preset-3-ls);
+  font-weight: var(--text-preset-3-fw);
+}
+
+.text-preset-4 {
+  font-family: var(--text-preset-4-ff);
+  font-size: var(--text-preset-4-fs);
+  line-height: var(--text-preset-4-lh);
+  letter-spacing: var(--text-preset-4-ls);
+  font-weight: var(--text-preset-4-fw);
+}
+
+.text-preset-4-bold {
+  font-family: var(--text-preset-4-bold-ff);
+  font-size: var(--text-preset-4-bold-fs);
+  line-height: var(--text-preset-4-bold-lh);
+  letter-spacing: var(--text-preset-4-bold-ls);
+  font-weight: var(--text-preset-4-bold-fw);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+}
+img {
+  width: 100%;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+li {
+  color: var(--color-stone-600);
+}
+li:not(:last-child) {
+  padding: 0 0 var(--spacing-100) 0;
+}
+li::marker {
+  color: var(--color-rose-800);
+}
+
+hr {
+  margin: var(--spacing-300) 0 var(--spacing-300) 0;
+}
+
+.card {
+  width: clamp(23.438rem, 40vw, 46rem);
+}
+
+.card__context {
+  padding: clamp(2rem, 8vw, 2.5rem);
+}
+
+.card__title {
+  color: var(--color-stone-900);
+}
+
+.card__description {
+  padding-top: var(--spacing-300);
+  color: var(--color-stone-600);
+}
+
+.card__preparation {
+  background-color: var(--color-rose-50);
+  padding: var(--spacing-300);
+  margin: var(--spacing-400) 0;
+  border-radius: 1rem;
+}
+
+.card__preparation-title {
+  color: var(--color-rose-800);
+  padding-bottom: var(--spacing-200);
+}
+
+.card__preparation-list,
+.card__ingredients-list {
+  color: var(--color-stone-600);
+}
+
+.card__ingredients-title,
+.card__instruction-title,
+.card__nutrition-title {
+  padding-bottom: var(--spacing-300);
+  color: var(--color-brown-800);
+}
+
+.card__instruction li::marker {
+  font-family: var(--text-preset-4-bold-ff);
+  font-size: var(--text-preset-4-bold-fs);
+  font-weight: var(--text-preset-4-bold-fw);
+}
+
+.card__instruction strong {
+  padding-left: var(--spacing-200);
+}
+
+.card__nutrition-description {
+  color: var(--color-stone-600);
+  padding-bottom: var(--spacing-300);
+}
+
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition-table tr {
+  border-bottom: 1px solid var(--color-stone-150);
+}
+
+.nutrition-table tr:last-child {
+  border-bottom: none;
+}
+
+.nutrition-table td {
+  padding: var(--spacing-150) var(--spacing-400);
+  color: var(--color-stone-600);
+}
+
+.nutrition-table td:last-child {
+  color: var(--color-brown-800);
+}
